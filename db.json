@@ -97,7 +97,7 @@
       "id": 16
     },
     {
-      "likes": 0,
+      "likes": 1,
       "name": "let's think!!!",
       "image": "https://images-na.ssl-images-amazon.com/images/I/61cPRDIdkHL._AC_SX425_.jpg",
       "id": 17
@@ -119,6 +119,12 @@
       "name": "more times than not",
       "image": "https://images3.sw-cdn.net/product/picture/710x528_11738631_6944059_1522853331.jpg",
       "id": 20
+    },
+    {
+      "likes": 0,
+      "name": "Stephen Curry",
+      "image": "https://images3.sw-cdn.net/product/picture/710x528_11738631_6944059_1522853331.jpg",
+      "id": 21
     }
   ]
 }
