@@ -89,8 +89,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener('click', function(event){
   if (event.target.classList.contains('like-btn')) {
-    const likes = getLikesOnCard(event) + 1
-    const id = findCard(event).dataset.id
+    let likes = getLikesOnCard(event) + 1
+    let id = findCard(event).dataset.id
     fetch(`http://localhost:3000/toys/${id}`, {
       method: "PATCH",
       headers: {
