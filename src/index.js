@@ -1,6 +1,6 @@
 let addToy = false;
 
-function toyNodeMaker(toy) {
+function toyCardMaker(toy) {
   const toyCard = document.createElement('div');
   const toyName = document.createElement('h2');
   const toyImage = document.createElement('img');
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
   .then((response) => response.json())
   .then((json) => {
     for (let toy of json){
-      prepend(toyNodeMaker(toy));
+      prepend(toyCardMaker(toy));
     }
   })
   
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .then((response) => response.json())
     .then((data) => {
-      prepend(toyNodeMaker(data));
+      prepend(toyCardMaker(data));
       for (let f of formFields) {
         f.value = ""
       }
