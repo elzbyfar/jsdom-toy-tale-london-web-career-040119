@@ -27,9 +27,9 @@ function newToy(formFields) {
   }
   return toy
 }
-function prepend(toy) {
+function append(toy) {
   const toyCollection = document.getElementById('toy-collection')
-  toyCollection.prepend(toy)
+  toyCollection.append(toy)
 }
 
 function getLikesOnCard(event) {
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
   .then((response) => response.json())
   .then((json) => {
     for (let toy of json){
-      prepend(toyCardMaker(toy));
+      append(toyCardMaker(toy));
     }
   })
   
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .then((response) => response.json())
     .then((data) => {
-      prepend(toyCardMaker(data));
+      append(toyCardMaker(data));
       for (let f of formFields) {
         f.value = ""
       }
